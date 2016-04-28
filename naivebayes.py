@@ -19,7 +19,7 @@ def load_datasets():
 def create_voca_dictionary(dataset_list):
     voca_set = set([])
     for dataset in dataset_list:
-        voca_set = voca_set | dataset
+        voca_set = voca_set | set(dataset)
     return voca_set
 
 
